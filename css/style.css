@@ -176,9 +176,11 @@ input[type="checkbox"] {
     position: static;
   }
   .search-input {
-    width: 145px;
+    width: 225px;
     right: 40px;
-    top: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 66%;
     transform: translateY(-56%);
   }
 

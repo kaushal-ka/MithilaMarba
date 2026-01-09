@@ -241,29 +241,39 @@ input[type="checkbox"] {
 
   #product-1 {
     position: absolute;
-    width: 128px;
-    height: 189px;
-    left: 4px;
+    width: 140px;
+    height: 200px;
+    left: 0px;
     top: 44px;
     background: #d9d9d9;
   }
 
   #product-2 {
     position: absolute;
-    width: 128px;
-    height: 189px;
-    left: 140px;
+    width: 140px;
+    height: 200px;
+    left: 151px;
     top: 44px;
     background: #d9d9d9;
   }
-  
+
   #product-3 {
     position: absolute;
-    width: 128px;
-    height: 189px;
-    right: 0px;
+    width: 140px;
+    height: 200px;
+    right: -38px;
     top: 44px;
     background: #d9d9d9;
+  }
+
+  /* Third section  */
+  .select-criteria {
+    position: absolute;
+    background-color: aquamarine;
+    width: 445px;
+    height: 315px;
+    left: 20px;
+    top: 616px;
   }
 
   /* footer  */

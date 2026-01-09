@@ -150,8 +150,8 @@ input[type="checkbox"] {
   .nav-menu {
     /* Hide the menu by default on small screens */
     display: none;
-    left: 335px;
-    width: 100px;
+    left: 370px;
+    width: 110px;
   }
 
   /* Hamburger  */

@@ -132,9 +132,6 @@ input[type="checkbox"] {
 
   .hamburger-icon {
     display: flex;
-    position: relative;
-    right: 0;
-    top: 1.8%;
   }
 
   /* Header closed */
@@ -201,15 +198,10 @@ input[type="checkbox"] {
   }
 
   .text-content {
-    height: 16px;
-    left: calc(50% - 297px / 2 + 0.5px);
-    top: 7px;
-    font-family: "Inter";
-    font-style: normal;
+    text-align: center;
     font-weight: 700;
     font-size: 0.5rem;
-    line-height: 16px;
-    color: #000000;
+    line-height: 1.4;
   }
 
   .second-text {
@@ -218,10 +210,10 @@ input[type="checkbox"] {
 
   /* footer  */
   .footer {
-    height: 30px;
+    height: 35px;
     background-color: #333;
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     text-align: center;
     padding-top: 8px;
   }

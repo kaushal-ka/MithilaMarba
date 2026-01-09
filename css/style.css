@@ -136,7 +136,7 @@ input[type="checkbox"] {
     /* background-color: #333; */
     padding: 2rem 1.5rem;
     /* margin-top: 10px; */
-    width: 440px;
+    width: 485px;
     height: 60px;
   }
 
@@ -159,13 +159,13 @@ input[type="checkbox"] {
   .hamburger-icon {
     display: flex;
     position: absolute;
-    right: -15px;
+    right: -50px;
   }
   /* Search container */
   .search-container {
     position: absolute;
-    right: 56px;
-    top: 5%;
+    right: 5px;
+    top: 3.4%;
     /* margin-top: 10px; */
     transform: translateY(-46%);
   }
@@ -208,7 +208,7 @@ input[type="checkbox"] {
     font-size: 1.5rem;
   }
 
-   /* Hero text-content */
+  /* Hero text-content */
   .hero-text {
     display: flex;
     /* justify-content: center; */
@@ -236,5 +236,4 @@ input[type="checkbox"] {
     align-items: center;
     font-size: 0.9rem;
   }
-
 }

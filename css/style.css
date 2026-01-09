@@ -235,7 +235,7 @@ input[type="checkbox"] {
   }
 
   .card {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 200px;
   }
 
@@ -254,7 +254,7 @@ input[type="checkbox"] {
     height: 189px;
     left: 140px;
     top: 44px;
-    background: #750b0b;
+    background: #d9d9d9;
   }
   
   #product-3 {
@@ -263,7 +263,7 @@ input[type="checkbox"] {
     height: 189px;
     right: 0px;
     top: 44px;
-    background: #544f4f;
+    background: #d9d9d9;
   }
 
   /* footer  */

@@ -192,15 +192,7 @@ input[type="checkbox"] {
     height: 1188px;
   }
 
-  .hero-sec {
-    width: 404px;
-    height: 237px;
-    /* background-color: pink; */
-    position: absolute;
-    left: 18px;
-    top: 330px;
-  }
-
+  /* banner  */
   .banner {
     width: 440px;
     height: 209px;
@@ -209,6 +201,15 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+  }
+  /* Hero section  */
+  .hero-sec {
+    width: 404px;
+    height: 237px;
+    /* background-color: pink; */
+    position: absolute;
+    left: 18px;
+    top: 330px;
   }
 
   /* Hero text-content */
@@ -228,9 +229,41 @@ input[type="checkbox"] {
     cursor: pointer;
   }
 
-  .text-right a{
+  .text-right a {
     text-decoration: none;
     color: black;
+  }
+
+  .card {
+    border: 2px solid black;
+    height: 200px;
+  }
+
+  #product-1 {
+    position: absolute;
+    width: 128px;
+    height: 189px;
+    left: 4px;
+    top: 44px;
+    background: #d9d9d9;
+  }
+
+  #product-2 {
+    position: absolute;
+    width: 128px;
+    height: 189px;
+    left: 140px;
+    top: 44px;
+    background: #750b0b;
+  }
+  
+  #product-3 {
+    position: absolute;
+    width: 128px;
+    height: 189px;
+    right: 0px;
+    top: 44px;
+    background: #544f4f;
   }
 
   /* footer  */

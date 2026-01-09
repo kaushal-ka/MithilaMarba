@@ -218,7 +218,7 @@ input[type="checkbox"] {
   .text-right {
     display: flex;
     position: absolute;
-    width: 67px;
+    width: 75px;
     align-self: center;
     gap: 8px;
     left: 342px;

@@ -166,7 +166,7 @@ input[type="checkbox"] {
   .search-container {
     position: absolute;
     right: 5px;
-    top: 3.7%;
+    top: 3%;
     /* margin-top: 10px; */
     transform: translateY(-46%);
   }

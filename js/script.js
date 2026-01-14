@@ -109,4 +109,3 @@ function goToProduct(name) {
   // Later you can redirect:
   // window.location.href = `/search.html?q=${encodeURIComponent(name)}`;
 }
-

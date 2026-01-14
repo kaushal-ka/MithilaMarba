@@ -1,5 +1,7 @@
 console.log("Script is loading...");
-console.log("Hello, My name is kaushal karn and i am projecting my work here see my creations....")
+console.log(
+  "Hello, My name is kaushal karn and i am projecting my work here see my creations...."
+);
 const menuToggle = document.getElementById("menu-toggle");
 const hamburger = document.querySelector('label[for="menu-toggle"]');
 const navMenu = document.querySelector(".nav-menu");
@@ -28,7 +30,6 @@ menuToggle.addEventListener("change", () => {
   }
 });
 
-
 // Search functionality
 // ================= SEARCH POPUP =================
 
@@ -44,7 +45,7 @@ const products = [
   "Sindoor Box",
   "Mangalsutra",
   "Ritual Coconut",
-  "Wedding Diyas"
+  "Wedding Diyas",
 ];
 
 /* Open popup */
@@ -81,8 +82,8 @@ searchInput.addEventListener("input", () => {
   searchResults.style.display = "block";
 
   products
-    .filter(item => item.toLowerCase().includes(value))
-    .forEach(item => {
+    .filter((item) => item.toLowerCase().includes(value))
+    .forEach((item) => {
       const div = document.createElement("div");
       div.textContent = item;
 

@@ -27,3 +27,84 @@ menuToggle.addEventListener("change", () => {
     document.removeEventListener("click", handleOutsideClick);
   }
 });
+
+
+// Search functionality
+// ================= SEARCH POPUP =================
+
+const openSearch = document.getElementById("openSearch");
+const searchPopup = document.getElementById("searchPopup");
+const searchInput = document.getElementById("searchInput");
+const searchResults = document.getElementById("searchResults");
+
+const products = [
+  "Wedding Kalash",
+  "Puja Thali",
+  "Mithila Saree",
+  "Sindoor Box",
+  "Mangalsutra",
+  "Ritual Coconut",
+  "Wedding Diyas"
+];
+
+/* Open popup */
+openSearch.addEventListener("click", () => {
+  searchPopup.style.display = "flex";
+  searchInput.focus();
+});
+
+/* Close popup on outside click */
+searchPopup.addEventListener("click", (e) => {
+  if (e.target === searchPopup) {
+    closeSearch();
+  }
+});
+
+/* Close helper */
+function closeSearch() {
+  searchPopup.style.display = "none";
+  searchInput.value = "";
+  searchResults.style.display = "none";
+  searchResults.innerHTML = "";
+}
+
+/* Search input */
+searchInput.addEventListener("input", () => {
+  const value = searchInput.value.toLowerCase();
+  searchResults.innerHTML = "";
+
+  if (!value) {
+    searchResults.style.display = "none";
+    return;
+  }
+
+  searchResults.style.display = "block";
+
+  products
+    .filter(item => item.toLowerCase().includes(value))
+    .forEach(item => {
+      const div = document.createElement("div");
+      div.textContent = item;
+
+      div.addEventListener("click", () => {
+        goToProduct(item);
+      });
+
+      searchResults.appendChild(div);
+    });
+});
+
+/* Enter key support */
+searchInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && searchInput.value.trim() !== "") {
+    goToProduct(searchInput.value);
+  }
+});
+
+/* Navigation logic (for now demo) */
+function goToProduct(name) {
+  closeSearch();
+  alert("Searching for: " + name);
+  // Later you can redirect:
+  // window.location.href = `/search.html?q=${encodeURIComponent(name)}`;
+}

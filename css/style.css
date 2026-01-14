@@ -401,17 +401,6 @@ input[type="checkbox"] {
 }
 
 /* Dropdown results */
-/* .search-results {
-  margin-top: 0.5rem;
-  background: white;
-  width: 90%;
-  max-width: 400px;
-  border-radius: 10px;
-  max-height: 220px;
-  overflow-y: auto;
-  display: none;
-} */
-
 .search-results {
   position: absolute;
   top: calc(100% + 6px);

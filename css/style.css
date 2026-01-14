@@ -177,20 +177,63 @@ input[type="checkbox"] {
     color: black;
   }
 
-  .card {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-  }
+ /* =================== Carousel / Card =================== */
 
-  .card > div {
-    min-width: 115px;
-    height: 200px;
-    background: #d9d9d9;
-    scroll-snap-align: start;
-  }
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+  overflow-x: hidden; /* hide extra content */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.card > div {
+  min-width: 115px;
+  height: 200px;
+  background: #d9d9d9;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* Hide scrollbar */
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+/* Arrows for mobile carousel */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 5px;
+}
+
+.right-arrow {
+  right: 5px;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 
   /* Third section  */
   .select-criteria {
@@ -376,4 +419,23 @@ input[type="checkbox"] {
   .search-popup {
     padding-top: 70px;
   }
+}
+
+#product-1{
+  background-color: green;
+}
+#product-2{
+  background-color: brown;
+}
+#product-3{
+  background-color: pink;
+}
+#product-1-clone{
+  background-color: blue;
+}
+#product-2-clone{
+  background-color: black;
+}
+#product-3-clone{
+  background-color: grey;
 }
